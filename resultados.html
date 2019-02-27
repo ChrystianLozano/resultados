@@ -2,12 +2,79 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <title>Instituto Irapuato | Resultados de examen de admisión</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Instituto Irapuato | Resultados de examen de admisión</title>
   </head>
   <body>
-    <h1 class=" center-align">Resultados de admisión</h1>
+    <div class="container">
+      <div class="row">
+    <figure class="center">
+      <a href="http://uii.edu.mx"><img class="responsive-img" src="imgResultados/logo.jpg"></a>
+    </figure>
+    <h1 class="center-align">Resultados de admisión</h1>
+    <br>
+<div class="input-field">
+  <select class="blue-text">
+    <optgroup label="">
+      <option value="" selected disabled>Selecciona una unidad academica</option>
+    </optgroup>
+    <optgroup label="Preparatoria">
+      <option value="1">Matutina</option>
+      <option value="2">Vespertina</option>
+    </optgroup>
+    <optgroup label="Universidad">
+      <option value="1">Escolarizada</option>
+      <option value="2">Mixta</option>
+    </optgroup>
+  </select>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<div class="card">
+<div class="card-content">
+<h2 class="card-title center-align">Universidad Mixta</h2>
+<p class="center-align">Examen aplicado el 15 y 16 de Febrero 2019</p>
+<h5 class="z-depth-1">Si fuiste aceptado recibirás un correo electrónico en el transcurso del día con la información necesaria para realizar su proceso de ingreso.</h3>
+<table class="striped">
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+  </div>
+  </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="jsResultados/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // JAVASCRIPT START HERE //
+
+      $('select').material_select();
+
+
+    });
+  </script>
+
+
+
   </body>
 </html>
