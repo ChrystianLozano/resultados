@@ -17,7 +17,7 @@
     <h1 class="center-align">Resultados de admisión</h1>
     <br>
 <div class="input-field">
-  <select class="blue-text">
+  <select class="blue-text" id="unidad">
     <optgroup label="">
       <option value="" selected disabled>Selecciona una unidad academica</option>
     </optgroup>
@@ -26,28 +26,24 @@
       <option value="2">Vespertina</option>
     </optgroup>
     <optgroup label="Universidad">
-      <option value="1">Escolarizada</option>
-      <option value="2">Mixta</option>
+      <option value="3">Escolarizada</option>
+      <option value="4">Mixta</option>
     </optgroup>
   </select>
 </div>
 
 <div class="card">
+  <span id="iniCard"></span>
 <div class="card-content">
-<h2 class="card-title center-align">Universidad Mixta</h2>
-<p class="center-align">Examen aplicado el 15 y 16 de Febrero 2019</p>
-<h5 class="z-depth-1">Si fuiste aceptado recibirás un correo electrónico en el transcurso del día con la información necesaria para realizar su proceso de ingreso.</h3>
-<table class="striped">
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-          </tr>
+<h2 class="card-title center-align" id="titleUnit"></h2>
+<p class="center-align" id="dateTest">Selecciona una unidad academica para mostrar resultados</p>
+<span id="alertMess"></span>
+<table class="striped highlight">
+        <tbody id="listResult">
         </tbody>
       </table>
 </div>
+
 </div>
 
   </div>
@@ -56,6 +52,7 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="jsResultados/materialize.min.js"></script>
+    <script type="text/javascript" src="jsResultados/unit.js"></script>
 
   <script>
     $(document).ready(function () {
