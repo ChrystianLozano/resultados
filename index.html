@@ -9,6 +9,9 @@
       tbody{
         text-transform: uppercase;
       }
+      ul.dropdown-content.select-dropdown li span {
+        color: #000;
+      }
     </style>
     <title>Instituto Irapuato | Resultados de examen de admisión</title>
   </head>
@@ -21,8 +24,8 @@
     <h1 class="center-align">Resultados de admisión</h1>
     <br>
 <div class="input-field">
-  <select class="green-text" id="unidad">
-      <option value="" selected disabled>UNIDAD ACADEMICA</option>
+  <select class="blue-text text-darken-4" id="unidad">
+      <option value="" selected disabled>UNIDAD ACADÉMICA</option>
       <option value="2">PREPARATORIA VESPERTINA</option>
       <option value="1">PREPARATORIA MATUTINA</option>
       <option value="3">UNIVERSIDAD ESCOLARIZADA</option>
@@ -33,7 +36,7 @@
 <div class="card">
 <div class="card-content">
 <h2 class="card-title center-align" id="titleUnit"></h2>
-<p class="center-align" id="dateTest">Selecciona una unidad academica para mostrar resultados</p>
+<p class="center-align" id="dateTest">Selecciona una unidad académica para mostrar resultados</p>
 <span id="alertMess"></span>
 <table class="striped highlight">
         <tbody id="listResult">
