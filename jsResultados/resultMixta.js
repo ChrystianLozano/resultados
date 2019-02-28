@@ -1,7 +1,9 @@
 function mixtaLista(id) {
-
     const url = "https://spreadsheets.google.com/feeds/list/"+id+"/od6/public/values?alt=json";
     output.innerHTML = '';
+    output.dateTest = '';
+    output.alertMess = '';
+    output.titleUnit = '';
     fetch(url).then(function (response) {
                     return response.json()
                 }).then(function (data) {
