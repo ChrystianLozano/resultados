@@ -6,7 +6,7 @@ var unidad = document.getElementById('unidad');
       unidad.onchange=function(){
         if (unidad.value == 4) {
           const id = '1imqj0vgkt4YuYpZpa58SpCM0AipphSJTeENljz3CPbU'
-          mixtaLista(id);
+          mixtaLista2(id);
         }
         if (unidad.value == 1) {
           const id = '1JcgcsYXEDuaRSzEVquN3EPibYc7bo0n5Mg9I5sBDy8I'
