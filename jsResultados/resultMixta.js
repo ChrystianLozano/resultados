@@ -14,7 +14,7 @@ function mixtaLista(id) {
       for(let x=1;x<entry.length;x++){
           let matricula = entry[x].gsx$matricula.$t;
           let mensaje = entry[x].gsx$mensaje.$t;
-          listResult.innerHTML += '<tr><td class="center-align">'+matricula+'</td><td>' +mensaje+'</td></tr>';
+          output.innerHTML += '<tr><td class="center-align">'+matricula+'</td><td>' +mensaje+'</td></tr>';
       }
     })();
 }
@@ -35,7 +35,7 @@ function mixtaLista2(id) {
           let matricula = entry[x].gsx$matricula.$t;
           let carrera = entry[x].gsx$carrera.$t;
           let mensaje = entry[x].gsx$mensaje.$t;
-          listResult.innerHTML += '<tr><td class="center-align">'+matricula+'</td><td class="center-align">'+carrera+'</td><td>' +mensaje+'</td></tr>';
+          output.innerHTML += '<tr><td class="center-align">'+matricula+'</td><td class="center-align">'+carrera+'</td><td>' +mensaje+'</td></tr>';
       }
     })();
 }
