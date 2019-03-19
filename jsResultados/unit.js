@@ -2,7 +2,6 @@ const output = document.querySelector('#listResult');
 const dateTest = document.querySelector('#dateTest');
 const alertMess = document.querySelector('#alertMess');
 const titleUnit = document.querySelector('#titleUnit');
-var unidad = document.getElementById('unidad');
       unidad.onchange=function(){
         if (unidad.value == 4) {
           const id = '1imqj0vgkt4YuYpZpa58SpCM0AipphSJTeENljz3CPbU'
@@ -22,5 +21,5 @@ var unidad = document.getElementById('unidad');
         }
       }
 document.addEventListener('DOMContentLoaded', function() {
-var elems = document.querySelectorAll('select');
+var unidad = document.querySelectorAll('select');
 });
