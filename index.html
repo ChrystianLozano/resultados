@@ -35,9 +35,10 @@
 </div>
 <div class="card">
 <div class="card-content">
-<h2 class="card-title center-align" id="titleUnit"></h2>
-<p class="center-align" id="dateTest">Selecciona una unidad académica para mostrar resultados</p>
-<span id="alertMess"></span>
+<h2 class="card-title center-align" id="titleUnit"></h2><br>
+<p class="center-align" id="dateTest">Selecciona una unidad académica para mostrar resultados</p><br>
+<span id="alertMess"></span><br>
+<span id="buscar"></span><br>
 <table class="striped highlight">
         <tbody id="listResult">
         </tbody>
@@ -46,6 +47,15 @@
 
 </div>
 
+  </div>
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p><div class="progress"><div class="indeterminate"></div></div></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+    </div>
   </div>
   </div>
 
@@ -65,6 +75,7 @@
       });
       $('select').material_select();
       $('input#input_text, textarea#textarea2').characterCounter();
+      $('.modal').modal();
     });
   </script>
 
