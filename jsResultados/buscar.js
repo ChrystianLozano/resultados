@@ -12,5 +12,4 @@ function enlista() {
   if (matriculaID.length === 0){
     elresultado.innerHTML = 'Es necesario que Introdusca una matricula';
   }
-  
 }
