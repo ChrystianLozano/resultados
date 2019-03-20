@@ -13,7 +13,7 @@ function mixtaLista(id) {
       buscar.innerHTML = `<div class="input-field col s6">
           <i class="material-icons prefix">search_circle</i>
           <input id="icon_prefix" type="number" class="validate" required>
-          <label for="icon_prefix">Matricula</label>
+          <label for="icon_prefix">Matrícula</label>
         </div>
         <div class="input-field col s6">
           <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="botonBuscar">Buscar</a>
