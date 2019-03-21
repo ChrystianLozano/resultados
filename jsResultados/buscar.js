@@ -1,5 +1,4 @@
 function enlista() {
-  console.log('Clicking');
   let matriculaID = document.getElementById('icon_prefix').value;
   let lobuscado = document.querySelector('#lobuscado');
   let elresultado = document.querySelector('#elresultado')
@@ -57,7 +56,6 @@ function validarMatricula(matriculaID, idUrl) {
     </div>
   </div>`;
     const url = "https://spreadsheets.google.com/feeds/list/"+idUrl+"/od6/public/values?alt=json";
-    console.log(url);
     (async function busqueda(){
       const response = await fetch(url);
       const data = await response.json();
@@ -66,11 +64,7 @@ function validarMatricula(matriculaID, idUrl) {
       for(let x=1;x<entry.length;x++){
           let matricula = entry[x].gsx$matricula.$t;
           let mensaje = entry[x].gsx$mensaje.$t;
-
-          console.log('lo buscado ' + matriculaID);
-          console.log('a ver ' + matricula);
           if (matricula == matriculaID) {
-            console.log('encontrado');
             elresultado.innerHTML = mensaje;
             salida = true;
             break;
