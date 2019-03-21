@@ -26,7 +26,7 @@ function mixtaLista(id) {
       for(let x=1;x<entry.length;x++){
           let matricula = entry[x].gsx$matricula.$t;
           let mensaje = entry[x].gsx$mensaje.$t;
-          output.innerHTML += '<tr><td class="center-align">'+matricula+'</td><td>' +mensaje+'</td></tr>';
+          output.innerHTML += '<tr id="ellistado"><td class="center-align" id="lamatricula">'+matricula+'</td><td id="elmensaje">' +mensaje+'</td></tr>';
       }
     })();
 }
